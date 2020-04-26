@@ -9,3 +9,4 @@ target
 .bloop/
 .metals/
 project/metals.sbt
+.DS_Store
