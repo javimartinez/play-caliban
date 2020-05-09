@@ -4,8 +4,9 @@
 # ~~~~
 
 # An example controller showing a sample home page
-GET     /                           controllers.AppController.index
-GET        /graphql                controllers.AppController.graphql(query: String, variables: Option[String], operation: Option[String],extensions:Option[String])
+GET        /subscriptions                    controllers.AppController.webSocketActionImpl
+#GET     /                           controllers.AppController.index
+GET         /graphql                controllers.AppController.graphql(query: String, variables: Option[String], operation: Option[String],extensions:Option[String])
 POST       /graphql                controllers.AppController.graphqlBody
 
 # Map static resources from the /public folder to the /assets URL path
