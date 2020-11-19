@@ -1,6 +1,5 @@
 package api
 
-import api.ExampleData
 import zio.stream.ZStream
 import zio.{ Has, Queue, Ref, UIO, URIO, ZLayer }
 import api.ExampleData._
